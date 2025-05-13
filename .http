@@ -1,0 +1,27 @@
+GET http://localhost:5000/api/tasks
+
+###
+
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Finish Assignment",
+  "description": "Complete the ORITSO fullstack task app",
+  "dueDate": "2025-05-15"
+}
+
+###
+
+PUT http://localhost:5000/api/tasks/1
+
+{
+  "status": "Completed"
+}
+
+###
+DELETE http://localhost:5000/api/tasks/7
+
+###
+GET http://localhost:5000/api/tasks?search=assignment
+
